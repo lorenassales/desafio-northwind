@@ -95,3 +95,12 @@ sources:
             tests:
               - unique
               - not_null
+
+      - name: shippers
+        description: Chart of information about shippers.
+        columns:
+          - name: shipper_id
+            description: It is a primary key from shippers's chart.
+            tests:
+              - unique
+              - not_null
