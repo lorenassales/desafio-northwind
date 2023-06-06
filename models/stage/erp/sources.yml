@@ -1,0 +1,97 @@
+
+version: 2
+
+sources:
+  - name: erp
+    description: Source from Northwind sales database.
+    schema: dbt_sales
+    tables:
+      
+      - name: products
+        description: Chart of information about products.
+        columns:
+          - name: product_id
+            description: It is a primary key from products's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: categories
+        description: Chart of information about category.
+        columns:
+          - name: category_id
+            description: It is a primary key from categories's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: suppliers
+        description: Chart of information about suppliers.
+        columns:
+          - name: supplier_id
+            description: It is a primary key from suppliers's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: customers
+        description: Chart of information about customers.
+        columns:
+          - name: customer_id
+            description: It is a primary key from curtomers's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: employee_territories
+        description: Chart of information about id of employees territories
+        columns:
+          - name: territory_id
+            description: It is a primary key from employee territories's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: territories
+        description: Chart of information about territories.
+        columns:
+          - name: territory_id
+            description: It is a primary key from territories's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: region
+        description: Chart of information about region.
+        columns:
+          - name: region_id
+            description: It is a primary key from region's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: employees
+        description: Chart of information about employees.
+        columns:
+          - name: employee_id
+            description: It is a primary key from employees's chart.
+            tests:
+              - unique
+              - not_null
+
+      - name: order_details
+        description: Chart of information about order details.
+        columns:
+          - name: order_id
+            description: It is not a primary key from order_details's chart. This chart has no pk.
+            tests:              
+              - not_null
+
+      - name: orders
+        description: Chart of information about orders.
+        columns:
+          - name: order_id
+            description: It is a primary key from orders's chart.
+            tests:
+              - unique
+              - not_null
