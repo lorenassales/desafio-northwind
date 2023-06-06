@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: dim_territories
+    description: This chart is a description about territories.
+    columns:
+      - name: territory_pk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: territory_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: employee_id
+        description: This columns show the employee id responsable for that territory.
+        tests:
+          - not_null
+
+      - name: region_id
+        description: This columns show the region id.
+        tests:
+          - not_null
+
+      - name: territory_description
+        description: This columns show territory description.
+        tests:
+          - not_null
+
+      - name: region_description
+        description: This columns show region description.
+        tests:
+          - not_null
