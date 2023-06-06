@@ -11,10 +11,10 @@ with
             , cast((last_name || " " || first_name) as string) as employee_name
             , cast(title as string) as role_of            
             , cast(hire_date as date) as hire_date
-            , cast(address as string) as address
-            , cast(city as string) as city
-            , cast(region as string) as region
-            , cast(country as string) as country           
+            , cast(address as string) as employee_address
+            , cast(city as string) as employee_city
+            , cast(region as string) as employee_region
+            , cast(country as string) as employee_country           
         from employees
     )
 select *

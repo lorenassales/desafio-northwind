@@ -9,7 +9,7 @@ with
             employees.employee_id
             --, employees.manager_id           
             , employees.employee_name
-            , managers.employee_name as manager       
+            , managers.employee_name as manager_name       
             , employees.hire_date
             , employees.address
             , employees.city            

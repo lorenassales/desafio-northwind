@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_shippers
+    description: This chart is a description about shippers.
+    columns:
+      - name: shipper_pk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: shipper_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: company_name
+        description: This column brings the name of company.
+        tests:
+          - not_null

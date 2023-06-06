@@ -17,21 +17,21 @@ models:
           - not_null
 
       - name: employee_id
-        description: This columns show the employee id responsable for that territory.
+        description: This column shows the employee id responsable to that territory.
         tests:
           - not_null
 
       - name: region_id
-        description: This columns show the region id.
+        description: This column shows the region id.
         tests:
           - not_null
 
       - name: territory_description
-        description: This columns show territory description.
+        description: This column shows territory description.
         tests:
           - not_null
 
       - name: region_description
-        description: This columns show region description.
+        description: This columns shows region description.
         tests:
           - not_null
