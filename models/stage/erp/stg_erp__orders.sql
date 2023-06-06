@@ -12,7 +12,7 @@ with
             , cast(order_date as date) as order_date
             , cast(required_date as date) as required_date
             , cast(shipped_date as date) as shipped_date
-            --, cast(ship_via as int) as ship_via
+            , cast(ship_via as int) as ship_id
             , cast(freight as numeric) as freight
             , cast(ship_name as string) as ship_name
             , cast(ship_city as string) as ship_city

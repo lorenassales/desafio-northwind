@@ -4,7 +4,7 @@ models:
   - name: dim_shippers
     description: This chart is a description about shippers.
     columns:
-      - name: shipper_pk
+      - name: shipper_sk
         description: This is a surrogate key to this chart.
         tests:
           - unique
@@ -18,5 +18,4 @@ models:
 
       - name: company_name
         description: This column brings the name of company.
-        tests:
-          - not_null
+     

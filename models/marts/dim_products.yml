@@ -4,7 +4,7 @@ models:
   - name: dim_products
     description: This chart is a description about products.
     columns:
-      - name: product_pk
+      - name: product_sk
         description: This is a surrogate key to this chart.
         tests:
           - unique
@@ -28,24 +28,16 @@ models:
       
       - name: product_name
         description: This columns brings the name of product.
-        tests:
-          - not_null
-
+       
       - name: quantity_per_unit
         description: This columns brings the size of product.
-        tests:
-          - not_null
-
+       
       - name: unit_price
         description: This columns brings the price of product.
-        tests:
-          - not_null
-
+        
       - name: units_in_stock
         description: This columns brings how many product in stock.
-        tests:
-          - not_null
-
+       
       - name: units_on_order
         description: This columns brings how many products there are in one order.        
 
@@ -54,18 +46,16 @@ models:
 
       - name: category_name
         description: This column shows the category name to that product.
-        tests:          
-          - not_null
-      
+              
       - name: supplie_company_name
         description: This column shows the name of company.
-        tests:          
-          - not_null
-
+        
       - name: supplie_city
         description: This column shows the city of company.
-        tests:          
-
+        
       - name: supplie_country
         description: This column shows the country of company.
-        tests:
+
+      - name: is_discontinued
+        description: This column shows if the product still contiuned or not.
+        

@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: This is a fact chart to this project with sales registers.
+    columns:
+      - name: sales_sk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_fk
+        description: This is a foreing key came from customers's chart to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: employee_fk
+        description: This is a foreing key came from employees's chart to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: product_fk
+        description: This is a foreing key came from products's chart to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: shipper_fk
+        description: This is a foreing key came from shippers's chart to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: unit_price
+        description: This is column shows a product unit price in that order to this chart.        
+
+      - name: quantity
+        description: This is column shows a quantity sold in that order to this chart.       
+
+      - name: discount
+        description: This is column shows a discount applied in that order to this chart.
+
+      - name: order_date
+        description: This is column shows the date which that order was made to this chart.
+
+      - name: shipped_date
+        description: This is column shows the date which that order was coleted to this chart.
+
+      - name: required_date
+        description: This is column shows the date which that order was required to this chart.
+
+      - name: freight
+        description: This is column shows the value freight to that order to this chart.
+
+      - name: ship_name
+        description: This is column shows the ship name to that order to this chart.
+
+      - name: ship_city
+        description: This is column shows the ship city to that order to this chart.
+
+      - name: ship_country
+        description: This is column shows the ship country to that order to this chart.
+
+      - name: product_name
+        description: This columns brings the name of product.
+
+      - name: category_name
+        description: This column shows the category name to that product.
+
+      - name: is_discontinued
+        description: This column shows if the product still continued or not.
+
+      - name: employee_name
+        description: This column shows the employees name.       
+
+      - name: manager_name
+        description: This column shows the manager name.       
+
+      - name: company_name
+        description: This column brings the name of company.       
+
+      - name: gross_income
+        description: This column brings the gross income to that order to this chart.
+
+      - name: ner_revenue
+        description: This column brings the net revenue to that order to this chart.
+
+      - name: is_discount
+        description: This column brings if tha order had discount or not.
+      

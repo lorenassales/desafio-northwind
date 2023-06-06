@@ -25,6 +25,7 @@ with
             , products.units_in_stock
             , products.units_on_order
             , products.reorder_level
+            , products.is_discontinued
             , categories.category_name
             , suppliers.supplie_company_name
             , suppliers.supplie_city

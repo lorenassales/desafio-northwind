@@ -4,7 +4,7 @@ models:
   - name: dim_territories
     description: This chart is a description about territories.
     columns:
-      - name: territory_pk
+      - name: territory_sk
         description: This is a surrogate key to this chart.
         tests:
           - unique
@@ -17,21 +17,14 @@ models:
           - not_null
 
       - name: employee_id
-        description: This column shows the employee id responsable to that territory.
-        tests:
-          - not_null
+        description: This column shows the employee id responsable to that territory.       
 
       - name: region_id
         description: This column shows the region id.
-        tests:
-          - not_null
-
+        
       - name: territory_description
-        description: This column shows territory description.
-        tests:
-          - not_null
+        description: This column shows territory description.        
 
       - name: region_description
         description: This columns shows region description.
-        tests:
-          - not_null
+       

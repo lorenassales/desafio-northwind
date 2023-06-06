@@ -15,6 +15,7 @@ with
             , orders.customer_id
             , orders.employee_id
             , order_details.product_id
+            , orders.ship_id
             , order_details.unit_price
             , order_details.quantity
             , order_details.discount

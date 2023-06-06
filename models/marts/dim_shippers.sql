@@ -6,7 +6,7 @@ with
 
     , changes as (
         select
-            row_number() over (order by shipper_id) as shipper_pk
+            row_number() over (order by shipper_id) as shipper_sk
             , *
         from shippers
     )

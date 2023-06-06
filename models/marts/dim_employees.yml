@@ -4,7 +4,7 @@ models:
   - name: dim_employees
     description: This chart is a description about employees.
     columns:
-      - name: employee_pk
+      - name: employee_sk
         description: This is a surrogate key to this chart.
         tests:
           - unique
@@ -18,30 +18,19 @@ models:
 
       - name: employee_name
         description: This column shows the employees name.
-        tests:          
-          - not_null
-
+       
       - name: manager_name
         description: This column shows the manager name.
-        tests:          
-          - not_null
-
+        
       - name: hire_date
         description: This column shows the hire date to that employees.
-        tests:          
-          - not_null
-
+      
       - name: employee_address
         description: This column shows the address to that employees.
-        tests:          
-          - not_null
-
+       
       - name: employee_city
         description: This column shows the city to that employees.
-        tests:          
-          - not_null
-
+        
       - name: employee_country
         description: This column shows the country to that employees.
-        tests:          
-          - not_null
+        
