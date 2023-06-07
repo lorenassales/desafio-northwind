@@ -12,26 +12,22 @@ models:
 
       - name: customer_fk
         description: This is a foreing key came from customers's chart to this chart.
-        tests:
-          - unique
+        tests:          
           - not_null
 
       - name: employee_fk
         description: This is a foreing key came from employees's chart to this chart.
-        tests:
-          - unique
+        tests:          
           - not_null
 
       - name: product_fk
         description: This is a foreing key came from products's chart to this chart.
-        tests:
-          - unique
+        tests:          
           - not_null
 
       - name: shipper_fk
         description: This is a foreing key came from shippers's chart to this chart.
-        tests:
-          - unique
+        tests:          
           - not_null
 
       - name: unit_price

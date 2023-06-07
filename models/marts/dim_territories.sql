@@ -30,7 +30,7 @@ with
 
     , changes as (
         select
-            row_number() over (order by territory_id) as territory_pk
+            row_number() over (order by territory_id) as territory_sk
             , *
         from joined_charts
     )
