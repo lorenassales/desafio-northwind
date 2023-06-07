@@ -14,7 +14,7 @@ with
         from {{ ref('stg_erp__suppliers') }}
     )
 
-    , join_charts as (
+    , joined_charts as (
         select
             products.product_id
             , categories.category_id
@@ -25,6 +25,7 @@ with
             , products.units_in_stock
             , products.units_on_order
             , products.reorder_level
+            , products.is_discontinued
             , categories.category_name
             , suppliers.supplie_company_name
             , suppliers.supplie_city
@@ -40,7 +41,7 @@ with
         select
             row_number() over (order by product_id) as product_sk
             , *
-        from join_charts
+        from joined_charts
     )
 select *
 from changes

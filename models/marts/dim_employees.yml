@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: This chart is a description about employees.
+    columns:
+      - name: employee_sk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: employee_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: employee_name
+        description: This column shows the employees name.
+       
+      - name: manager_name
+        description: This column shows the manager name.
+        
+      - name: hire_date
+        description: This column shows the hire date to that employees.
+      
+      - name: employee_address
+        description: This column shows the address to that employees.
+       
+      - name: employee_city
+        description: This column shows the city to that employees.
+        
+      - name: employee_country
+        description: This column shows the country to that employees.
+        

@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: This chart is a description about customers.
+    columns:
+      - name: customer_sk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: company_name
+        description: This column shows the company name.       
+
+      - name: contact_name
+        description: This column shows the contact name.        
+
+      - name: contact_title
+        description: This column shows the role to that customer.       
+
+      - name: customer_address
+        description: This column shows the address to that customer.   
+
+      - name: customer_city
+        description: This column shows the city to that customer.        
+
+      - name: customer_region
+        description: This column shows the region to that customer.        
+
+      - name: customer_country
+        description: This column shows the country to that customer.
+        

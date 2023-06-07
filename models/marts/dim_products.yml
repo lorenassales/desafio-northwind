@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: This chart is a description about products.
+    columns:
+      - name: product_sk
+        description: This is a surrogate key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: product_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
+
+      - name: category_id
+        description: This column shows the category id to that product.
+        tests:          
+          - not_null
+
+      - name: supplier_id
+        description: This column shows the supplier id to that product.
+        tests:          
+          - not_null      
+      
+      - name: product_name
+        description: This columns brings the name of product.
+       
+      - name: quantity_per_unit
+        description: This columns brings the size of product.
+       
+      - name: unit_price
+        description: This columns brings the price of product.
+        
+      - name: units_in_stock
+        description: This columns brings how many product in stock.
+       
+      - name: units_on_order
+        description: This columns brings how many products there are in one order.        
+
+      - name: reorder_level
+        description: This columns brings the reorder level.              
+
+      - name: category_name
+        description: This column shows the category name to that product.
+              
+      - name: supplie_company_name
+        description: This column shows the name of company.
+        
+      - name: supplie_city
+        description: This column shows the city of company.
+        
+      - name: supplie_country
+        description: This column shows the country of company.
+
+      - name: is_discontinued
+        description: This column shows if the product still contiuned or not.
+        

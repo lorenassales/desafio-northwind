@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_sales__order_detail
+    description: This is a chart to join orders to orders details.
+    columns:      
+      - name: order_id
+        description: This is a primary key to this chart.
+        tests:
+          - unique
+          - not_null
